@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/732c1700eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="w-75 mx-auto p-5 d-flex flex-column gap-3 shadow mt-4 align-items-center"
+      >
+        <h1 class="text-info">Smart Login System</h1>
+        <input
+          type="text"
+          class="form-control border border-light bg-transparent shadow-none text-white"
+          name="nameInput"
+          id="nameInput"
+          placeholder="Enter your name"
+        />
+        <input
+          type="email"
+          class="form-control border border-light bg-transparent shadow-none text-white"
+          name="emailInput"
+          id="emailInput"
+          placeholder="Enter your email"
+        />
+        <input
+          type="password"
+          class="form-control border border-light bg-transparent shadow-none text-white"
+          name="passwordInput"
+          id="passwordInput"
+          placeholder="Enter your password"
+        />
+        <div
+          class="alert alert-danger py-1 my-1 d-none"
+          id="invalidAlert"
+          role="alert"
+        >
+          Invalid Data check again
+        </div>
+        <div
+          class="alert alert-danger py-1 my-1 d-none"
+          id="existAlert"
+          role="alert"
+        >
+          Email already exist try new one
+        </div>
+        <button type="button" id="singUpBtn" class="btn btn-outline-info w-100">
+          Sign Up
+        </button>
+        <p class="text-white">
+          You have an account
+          <a href="../index.html" class="text-info">Sign in</a>
+        </p>
+      </div>
+    </div>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
